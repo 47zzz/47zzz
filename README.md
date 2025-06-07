@@ -11,18 +11,18 @@
 ---
 
 ### Past Project
-🔍 Emotion Recognition with VGG-16  
-[View Project](https://github.com/47zzz/EmoDNNProject)
+🔍 Emotion Recognition with VGG-16
+[View Project](https://github.com/47zzz/EmoDNNProject)  
 Extracted hierarchical feature representations from VGG-16 to reveal spontaneous emotional perception in vision models. Applied RSA to link deep features with human behavioral responses.
 
 
-🗣️ Native Speaker Identification (WavLM + Whisper)  
-[View Project](https://github.com/47zzz/Native-speaker-identification)
+🗣️ Native Speaker Identification (WavLM + Whisper)
+[View Project](https://github.com/47zzz/Native-speaker-identification)  
 Built a binary classifier to distinguish native vs. non-native speakers using WavLM features. Introduced attribution loss to boost model focus on pronunciation errors, achieving 99.4% OOD accuracy.
 
 
-🤖 LLM Fine-tuning for Humor Generation  
-[View Project](https://github.com/47zzz/Comedy-Bit-Generation)
+🤖 LLM Fine-tuning for Humor Generation
+[View Project](https://github.com/47zzz/Comedy-Bit-Generation)  
 Fine-tuned Qwen2.5 32B to generate jokes using LoRA, SFT, and DPO. Created multi-lingual humor datasets and analyzed the model's strengths and limits in capturing comedic structure.
 
 
