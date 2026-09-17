@@ -1,0 +1,17 @@
+---
+import { ui } from '../data/ui';
+import { type Publication } from '../data/publications';
+import { type Lang } from '../lib/url';
+const { papers, lang } = Astro.props as { papers: Publication[]; lang: Lang };
+---
+<ol class="paper-list">
+ {papers.map((paper, i) => <li class="paper" id={paper.id}>
+  <div class="paper-index" aria-hidden="true">{String(i + 1).padStart(2, '0')}</div>
+  <div class="paper-main">
+   <div class="paper-meta"><span>{paper.venue}</span><span class:list={['paper-status', { 'under-review': paper.kind === 'preprint' }]}>{paper.status}</span></div>
+   <h3>{paper.title}</h3>
+   <p class="authors">{paper.authors.split('S.-C. Chen').map((part, i) => <>{i > 0 && <strong>S.-C. Chen</strong>}{part}</>)}</p>
+   <div class="paper-links">{paper.links.map(link => <a href={link.href}>{link.label} <span aria-hidden="true">↗</span></a>)}{paper.firstAuthor && <span class="author-note">{ui[lang].firstAuthor}</span>}</div>
+  </div><span class="paper-year">{paper.year}</span>
+ </li>)}
+</ol>

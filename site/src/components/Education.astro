@@ -1,0 +1,6 @@
+---
+import { education } from '../data/experience';
+import { type Lang } from '../lib/url';
+const { lang } = Astro.props as { lang: Lang };
+---
+<div class="timeline-row"><div class="timeline-date">{education.dates}</div><div><h3>{education.title[lang]}</h3><p class="org">{education.org[lang]}</p><p>{education.status[lang]} <span aria-hidden="true">·</span> GPA {education.gpa}</p></div></div>

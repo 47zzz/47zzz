@@ -1,0 +1,17 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { route } from '../lib/url';
+import { ui } from '../data/ui';
+export async function getStaticPaths() {
+ const entries = await getCollection('research');
+ return entries.map(entry => ({ params: { researchPath: `${entry.data.lang === 'en' ? '' : 'zh-tw/'}research/${entry.data.slug}` }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { lang, title, summary, label, slug, links } = entry.data;
+---
+<Base lang={lang} page={`research/${slug}`} title={title} description={summary}>
+ <div class="page-heading"><a class="eyebrow" href={route(lang)}>← {ui[lang].backResearch}</a><h1>{title}</h1><p>{summary}</p></div>
+ <article class="research-article"><p class="eyebrow">{label}</p><div class="prose"><Content /></div><div class="paper-links">{links.map(link=><a href={link.href}>{link.label} ↗</a>)}</div></article>
+</Base>

@@ -1,0 +1,18 @@
+export const research = [
+  { dates: '2024 — present', title: { en: 'Research Assistant', 'zh-tw': '研究助理' }, org: { en: 'NTU Speech Processing Laboratory', 'zh-tw': '臺大語音處理實驗室' }, advisor: 'Hung-yi Lee', description: { en: 'Expressive speech-to-speech translation, perceptual evaluation of speaker representations, cultural sound understanding, and LLM-driven educational video generation.', 'zh-tw': '研究表現性語音翻譯、說話者表徵的感知評估、文化聲音理解，以及以大型語言模型生成教學影片。' } },
+  { dates: 'Sep 2023 — Sep 2024', title: { en: 'Research Assistant', 'zh-tw': '研究助理' }, org: { en: 'Cognitive Neuroscience Lab, NTU', 'zh-tw': '臺大認知神經科學實驗室' }, advisor: 'Bo-Cheng Kuo', description: { en: 'Studied emotional information across the visual hierarchy using representational similarity analysis and variance partitioning of VGG-16 representations. Conducted a study with 35 participants.', 'zh-tw': '以表徵相似性分析及 VGG-16 表徵的變異分解，研究情緒資訊在視覺階層中的編碼；執行包含 35 位參與者的研究。' } },
+];
+export const education = { dates: 'Sep 2023 — Jun 2027', title: { en: 'B.S. in Psychology', 'zh-tw': '心理學學士' }, status: { en: 'Expected 2027', 'zh-tw': '預計 2027 年取得' }, org: { en: 'National Taiwan University', 'zh-tw': '國立臺灣大學' }, gpa: '4.07 / 4.30' };
+export const teaching = [
+  { dates: '2026', title: { en: 'Taiwan Olympiad in Artificial Intelligence', 'zh-tw': '臺灣人工智慧奧林匹亞' }, org: { en: 'National Team Training Camp', 'zh-tw': '國家代表隊培訓營' }, description: { en: 'Taught the core machine-learning curriculum, authored the contestants’ toolbox, and designed the four-problem national-selection exam and scoring scheme. Trainees earned 3 silver and 4 bronze medals at IOAI 2026.', 'zh-tw': '講授核心機器學習課程、編寫選手工具手冊，並設計四題國家隊選拔試題與評分機制。培訓選手於 IOAI 2026 獲得 3 銀、4 銅。' } },
+  { dates: 'Spring 2026', title: { en: 'Machine Learning', 'zh-tw': '機器學習' }, org: { en: 'Teaching Assistant · Prof. Hung-yi Lee, NTU', 'zh-tw': '教學助理・臺大李宏毅教授' }, description: { en: 'Designed and graded assignments on model training and speech generation (HW1, HW2, HW7, HW10), and supported students in labs and office hours.', 'zh-tw': '設計及批改模型訓練與語音生成作業（HW1、HW2、HW7、HW10），並於實作課及諮詢時間協助學生。' } },
+  { dates: 'Fall 2025', title: { en: 'Introduction to Generative AI and Machine Learning', 'zh-tw': '生成式人工智慧與機器學習導論' }, org: { en: 'Teaching Assistant · Prof. Hung-yi Lee, NTU', 'zh-tw': '教學助理・臺大李宏毅教授' }, description: { en: 'Prepared materials and led assignments on fine-tuning and catastrophic forgetting (HW8), and speech generation (HW10).', 'zh-tw': '準備教材，負責微調與災難性遺忘（HW8）及語音生成（HW10）作業。' } },
+];
+export const awards = [
+ { year: '2026', title: { en: '1st Place · VoiceMOS Challenge, Track 3', 'zh-tw': '第一名・VoiceMOS Challenge，Track 3' }, description: { en: 'Speaker and accent similarity MOS prediction; 18 teams from 11 countries.', 'zh-tw': '說話者與口音相似度 MOS 預測；共 11 國、18 支隊伍。' }, href: 'https://github.com/47zzz/vmc2026-track3-t04' },
+ { year: '2024', title: { en: 'Dean’s List / Shu-Chuan Award', 'zh-tw': '書卷獎' }, description: { en: 'Department of Psychology, National Taiwan University', 'zh-tw': '國立臺灣大學心理學系' } },
+ { year: '2024', title: { en: 'Honorable Mention · NTU Psychology Academic Paper Exchange', 'zh-tw': '佳作・第十屆臺大心理學系學術論文交流會' }, description: { en: '10th Academic Paper Exchange', 'zh-tw': '學術論文交流' } },
+];
+export const industry = { dates: 'Dec 2020 — Aug 2021', title: { en: 'Project Marketing Intern', 'zh-tw': '專案行銷實習生' }, org: 'CXCXC', description: { en: 'AI and cloud-computing training and consulting, Taiwan.', 'zh-tw': '臺灣人工智慧與雲端運算培訓及顧問服務。' } };
+export const skills = ['Python', 'PyTorch', 'Hugging Face Transformers', 'R', 'C/C++'];
+export const languages = { en: 'Mandarin Chinese (native), English (IELTS 6.5), Japanese (conversational)', 'zh-tw': '中文（母語）、英文（IELTS 6.5）、日文（日常會話）' };

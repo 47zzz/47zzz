@@ -1,0 +1,32 @@
+export const ui = {
+ en: {
+  home: 'Home', publications: 'Publications', experience: 'Experience', about: 'About',
+  research: 'Research', selected: 'Selected publications', allPapers: 'All publications',
+  focus: 'Research focus', contact: 'Get in touch',
+  bioTitle: 'A little background.', aboutLead: 'Speech, machine learning, and human perception.',
+  pubTitle: 'Publications.', pubLead: 'Research on speech, audio understanding, and human-aligned evaluation.',
+  expTitle: 'Experience.', expLead: 'Research, teaching, and the work in between.',
+  reviewed: 'Peer-reviewed papers', preprints: 'Preprints & under review',
+  teaching: 'Teaching', education: 'Education', awards: 'Awards & honors', industry: 'Industry',
+  skills: 'Tools & languages', advisor: 'Advisor', firstAuthor: 'First author',
+  readMore: 'Read research overview', explore: 'Explore my work',
+  skip: 'Skip to content', theme: 'Switch color theme', themeLight: 'Use light theme', themeDark: 'Use dark theme',
+  footer: 'Speech · Language · Perception', backResearch: 'Back to research',
+  empty: 'Page not found.', emptyLead: 'This page may have moved. Return to the home page to explore my work.',
+ },
+ 'zh-tw': {
+  home: '首頁', publications: '論文', experience: '經歷', about: '關於',
+  research: '研究', selected: '精選論文', allPapers: '所有論文',
+  focus: '研究方向', contact: '聯絡我',
+  bioTitle: '關於我。', aboutLead: '語音、機器學習與人類感知。',
+  pubTitle: '研究論文。', pubLead: '探索語音、音訊理解，以及貼近人類感知的評估方法。',
+  expTitle: '研究與教學經歷。', expLead: '從研究問題的探索，到知識的分享。',
+  reviewed: '同儕審查論文', preprints: '預印本與審查中論文',
+  teaching: '教學', education: '學歷', awards: '獎項與榮譽', industry: '業界經歷',
+  skills: '工具與語言', advisor: '指導教授', firstAuthor: '第一作者',
+  readMore: '閱讀研究簡介', explore: '探索研究',
+  skip: '跳至主要內容', theme: '切換色彩主題', themeLight: '使用淺色主題', themeDark: '使用深色主題',
+  footer: '語音・語言・感知', backResearch: '返回研究',
+  empty: '找不到這個頁面。', emptyLead: '頁面可能已移動，請回首頁瀏覽。',
+ }
+};

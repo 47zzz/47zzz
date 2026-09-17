@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import { route } from '../lib/url';
+import { ui } from '../data/ui';
+---
+<Base lang="en" title="404" noindex><div class="page-heading error-page"><p class="eyebrow">404</p><h1>{ui.en.empty}</h1><p>{ui.en.emptyLead}</p><a class="button" href={route('en')}>{ui.en.home} ↗</a></div></Base>

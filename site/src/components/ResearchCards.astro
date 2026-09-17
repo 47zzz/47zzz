@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import { route, type Lang } from '../lib/url';
+import { ui } from '../data/ui';
+const { lang } = Astro.props as { lang: Lang };
+const entries = (await getCollection('research', e => e.data.lang === lang)).sort((a,b) => a.data.order - b.data.order);
+---
+<div class="research-grid">
+ {entries.map((entry, index) => <a class="research-card" href={route(lang, `research/${entry.data.slug}`)}>
+  <div class="card-top"><span class="eyebrow">{entry.data.label}</span><span aria-hidden="true">↗</span></div>
+  <div class="research-illustration" aria-hidden="true">
+   {index === 0 ? <svg viewBox="0 0 400 90" fill="none"><path class="wave-axis" d="M0 45h400"/><g class="wave-bars">{Array.from({length: 61},(_,i)=>{const h=5+Math.abs(Math.sin(i*.63))*Math.pow(Math.sin(i/60*Math.PI),2)*65;return <line x1={20+i*6} x2={20+i*6} y1={45-h/2} y2={45+h/2}/>})}</g></svg> : <svg viewBox="0 0 400 90" fill="none"><path class="wave-axis" d="M0 45h400"/>{[0,1,2,3,4].map(i=><ellipse class="sound-ring" cx={200} cy={45} rx={30+i*29} ry={9+i*7}/>)}<circle class="sound-center" cx="200" cy="45" r="5"/></svg>}
+  </div>
+  <div class="card-bottom"><h3>{entry.data.title}</h3><p>{entry.data.summary}</p><span class="sr-only">{ui[lang].readMore}</span></div>
+ </a>)}
+</div>
