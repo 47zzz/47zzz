@@ -22,7 +22,7 @@ For a new standalone page, add mirrored wrappers under `site/src/pages/` and `si
 ## Verification and deployment
 From `site/`, run `npm run check`, `npm run build`, and `npm run check:built`. The first runs without a build and checks required frontmatter, duplicate IDs, bilingual heading parity, links in content, and required assets. The final check traverses every generated HTML page's local links, anchors, and assets. Inspect home and an inner page at desktop/mobile widths in both themes, including Chinese wrapping. Verify language switching preserves the current route and theme persists.
 
-Pushes to `main` trigger `.github/workflows/deploy.yml`. GitHub Pages must use GitHub Actions as its source. Deploy only built `site/dist`, never source files. The same-name repository README appears on the GitHub profile, so preserve a concise profile introduction before maintenance instructions.
+Pushes to `main` trigger `.github/workflows/deploy.yml`. GitHub Pages must use GitHub Actions as its source. Deploy only built `site/dist`, never source files. The same-name repository README appears on the GitHub profile, so keep it limited to the personal introduction and public links. Put maintenance instructions in MAINTENANCE.md, never in the profile README.
 
 ## Open content gaps
 None required for launch. No fabricated placeholders are displayed. Photos, new posts, and additional links should only be added when the author supplies them.
